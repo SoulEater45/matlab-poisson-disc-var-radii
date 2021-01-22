@@ -2,16 +2,14 @@ clear;
 close all;
 
 dimensions = [640, 360];
-dimensions = [256, 256, 256];
-n = length(dimensions);
-r = 30;
+%dimensions = [256, 256, 256];
 radii = [10 20];
 k = 50;
-%w = r / sqrt(n);
-w = 2*min(radii) / sqrt(n);
 o = 5;
-
 vis = true;
+
+n = length(dimensions);
+w = 2*min(radii) / sqrt(n);
 
 if all([vis any(n==[2,3])])
     figure;
